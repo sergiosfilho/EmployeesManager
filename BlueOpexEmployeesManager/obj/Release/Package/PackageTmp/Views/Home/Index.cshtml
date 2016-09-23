@@ -1,0 +1,67 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html ng-app="employeesManager">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Employees Manager</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../Content/Site.css" />
+                        
+    <script type="text/javascript" src="../../Scripts/lib/angular.min.js"></script>
+    <script type="text/javascript" src="../../Scripts/lib/angular-locale_pt-br.js"></script>
+    <script type="text/javascript" src="../../Scripts/lib/angular-route.min.js"></script>        
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.bundle.js"></script> 
+    <script type="text/javascript" src="../../Scripts/lib/angular-chart.js"></script> 
+    <script type="text/javascript" src="../../Scripts/lib/angular-animate.min.js"></script>
+    <script type="text/javascript" src="../../Scripts/lib/angular-touch.min.js"></script> 
+    <script type="text/javascript" src="../../Scripts/lib/ui-bootstrap-tpls-2.1.3.min.js"></script>        
+    <script type="text/javascript" src="../../Scripts/app.js"></script>
+    <script type="text/javascript" src="../../Scripts/controllers/loginCtrl.js"></script>
+    <script type="text/javascript" src="../../Scripts/controllers/employeesListCtrl.js"></script>
+    <script type="text/javascript" src="../../Scripts/controllers/createEmployeeCtrl.js"></script>
+    <script type="text/javascript" src="../../Scripts/controllers/chartEmployeesPerJobCtrl.js"></script>
+    <script type="text/javascript" src="../../Scripts/controllers/chartEmployeesPerAgeCtrl.js"></script>
+    <script type="text/javascript" src="../../Scripts/controllers/chartEmployeesPerPerfilCtrl.js"></script>
+    <script type="text/javascript" src="../../Scripts/controllers/filterEmployeesCtrl.js"></script>
+    <script type="text/javascript" src="../../Scripts/services/employeesAPIService.js"></script>
+    <script type="text/javascript" src="../../Scripts/config/routeConfig.js"></script>
+    <script type="text/javascript" src="../../Scripts/value/configValue.js"></script>
+        
+</head>
+
+<body>    
+    <nav id="topNav" class="navbar navbar-default" ng-if="!hideNavbar">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#/">Employees Manager</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">            
+            <li><a href="#/">Funcionários</a></li>
+            <li><a href="#/chartEmployeesPerJob">Gráficos</a></li>
+          </ul>
+          
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#/login">Sair</a></li>            
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div ng-view></div>   
+</body>
+
+</html>

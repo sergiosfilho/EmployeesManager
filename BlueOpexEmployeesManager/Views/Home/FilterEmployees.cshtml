@@ -1,0 +1,67 @@
+﻿@{
+    Layout = null;
+}
+
+<div class="partialWrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <form name="filterEmployeesForm" class="filterEmployeesForm">
+                    <h3 class="text-center">Filtros</h3>
+                    
+                    <div class="form-group">
+                        <label>Cargo</label>
+                        <select class="form-control" ng-model="filter.JobTitleId" ng-options="job.Id as job.Name for job in jobs" ng-required="true">
+                            <option value="">Selecione o cargo</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Data inicial</label>
+                        <p class="input-group">
+                          <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="filter.DateStart" is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+                          <span class="input-group-btn">
+                            <button type="button" class="btn btn-default" ng-click="open1()"><i class="glyphicon glyphicon-calendar"></i></button>
+                          </span>
+                        </p>                
+                    </div>
+
+                    <div class="form-group">
+                        <label>Data final</label>
+                        <p class="input-group">
+                          <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="filter.DateEnd" is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+                          <span class="input-group-btn">
+                            <button type="button" class="btn btn-default" ng-click="open2()"><i class="glyphicon glyphicon-calendar"></i></button>
+                          </span>
+                        </p>                
+                    </div>
+
+                    <button class="btn btn-success btn-block" ng-click="onBtnFilterClick(filter)" ng-disabled="filterEmployeesForm.$invalid">Filtrar</button>
+                </form>
+            </div>
+            <div class="col-md-9">
+                <canvas id="bar" class="chart chart-bar" chart-data="data" chart-labels="labels" chart-options="chartOptions" height="45" width="100"> 
+                    gráfico vai aqui
+                </canvas>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-striped tableFilteredEmployees" >
+                    <tr>
+                        <td>Nome</td>
+                        <td>Cargo</td>
+                        <td>Email</td>
+                        <td>Status</td>
+                    </tr>
+                    <tr ng-repeat="employee in tableData">
+                        <td>{{employee.Name}}</td>
+                        <td>{{employee.JobTitle}}</td>
+                        <td>{{employee.Email}}</td>
+                        <td>{{employee.Status}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

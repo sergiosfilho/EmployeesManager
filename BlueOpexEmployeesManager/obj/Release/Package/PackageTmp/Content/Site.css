@@ -1,0 +1,109 @@
+﻿html
+{
+    padding:0px;
+    margin:0px;
+}
+body
+{
+    padding:0px; 
+    margin:0px;            
+}
+#divLogin
+{            
+    padding:0px;
+    margin:0px;        
+    width:100vw;
+    height:60vh;    
+    background-image: url("../Images/home.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}        
+.imgLoginTshirt
+{            
+    width:40%;
+    margin-left:0.5%;
+}
+.loginLabel
+{
+    background:#FEC900;                        
+    font-size:90px;
+    font-weight:bold;
+    padding:10px;
+    position:absolute;
+    color:#4584B0;    
+}
+#loginLabel01
+{
+    top:5%; 
+    left:33%;     
+}
+#loginLabel02
+{
+    top:28%;   
+    left:33%;   
+}
+#loginBox
+{
+    color:White;
+    width:22%;    
+    min-width:220px;        
+    background:rgba(70, 70, 70, 0.5);    
+    position:absolute;
+    top:20%;
+    left:10%;            
+    padding:15px;
+}
+#loginBoxTitle
+{
+    text-align:center;
+    margin-bottom:15px;
+    font-size:large;
+}
+.partialWrapper
+{
+    margin-top:20px;
+}
+.btn
+{
+    margin-bottom:15px;
+}
+.topTitle
+{
+    font-size:large;
+    font-weight:bold;
+    text-align:center;
+}
+.navbar
+{
+    margin:0px;
+}
+.loginFooter
+{
+    text-align:center;
+    position:absolute;
+    left:0;
+    right:0;
+    top:67.2%;    
+}
+.filterEmployeesForm
+{
+    background: #EFEFEF;
+    padding:15px;
+}
+.tableFilteredEmployees
+{
+    margin-top: 20px;
+}
+
+/*   Angular UI - Date Picker   */
+.full button span {
+    background-color: limegreen;
+    border-radius: 32px;
+    color: black;
+}
+.partially button span {
+    background-color: orange;
+    border-radius: 32px;
+    color: black;
+}
+/* ---------------------------- */

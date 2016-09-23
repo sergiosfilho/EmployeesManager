@@ -1,0 +1,36 @@
+﻿@{
+    Layout = null;
+}
+
+
+<div id="divLogin">    
+    <div id="loginBox">
+        <div id="loginBoxTitle">Login</div>
+        <form name="loginForm">            
+            <div class="form-group">
+                <label>Usuário</label>
+                <input type="text" class="form-control" ng-model="loginData.UserLogin" ng-required="true" />                
+            </div>    
+                    
+            <div class="form-group">
+                <label>Senha</label>
+                <input type="password" class="form-control" ng-model="loginData.UserPassword" ng-required="true" />
+            </div>
+
+            <div class="alert alert-danger" ng-if="InvalidPassword">
+                Usuário ou senha inválidos
+            </div>
+
+            <button class="btn btn-success btn-block" ng-disabled="loginForm.$invalid" ng-click="onBtnLoginClick(loginData)">Entrar</button>
+        </form>
+    </div>
+
+    <div class="loginFooter">
+        <label>Avaliação - BlueOpex</label>
+        <br />
+        <div>Sérgio S. Filho</div>
+    </div>
+    
+</div>
+
+

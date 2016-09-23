@@ -1,0 +1,33 @@
+﻿@{
+    Layout = null;
+}
+
+<div class="partialWrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <a class="btn btn-success btn-block" href="#/createEmployee">Novo funcionário</a>
+            </div>
+            <div class="col-md-2">
+                <a class="btn btn-success btn-block" href="#/filterEmployees">Filtros</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="divEmployees">
+        <table class="table table-striped">
+            <tr>
+                <td>Nome</td>
+                <td>Cargo</td>
+                <td>Email</td>
+                <td>Status</td>
+            </tr>
+            <tr ng-repeat="employee in employees">
+                <td>{{employee.Name}}</td>
+                <td>{{employee.JobTitle}}</td>
+                <td>{{employee.Email}}</td>
+                <td>{{employee.Status}}</td>
+            </tr>
+        </table>    
+    </div>
+</div>

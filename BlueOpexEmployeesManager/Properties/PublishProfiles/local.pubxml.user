@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\publicacoes\employeeManager</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>09/19/2016 16:52:24</publishTime>
+    </File>
+    <File Include="bin/BlueOpexEmployeesManager.dll">
+      <publishTime>09/23/2016 15:36:42</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>09/19/2016 16:52:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>09/19/2016 16:52:22</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>09/19/2016 16:52:22</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.dll">
+      <publishTime>09/19/2016 16:52:23</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.WebRequest.dll">
+      <publishTime>09/19/2016 16:52:23</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>09/19/2016 16:52:22</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>09/19/2016 16:52:23</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>09/19/2016 16:52:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Providers.dll">
+      <publishTime>09/19/2016 16:52:23</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>09/19/2016 16:52:22</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>09/19/2016 16:52:22</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>09/19/2016 16:52:22</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>09/19/2016 16:52:22</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>09/19/2016 16:52:24</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>09/22/2016 16:15:43</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>09/19/2016 16:52:17</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>09/19/2016 16:52:17</publishTime>
+    </File>
+    <File Include="Images/camisa.png">
+      <publishTime>09/20/2016 04:02:23</publishTime>
+    </File>
+    <File Include="Images/employees.jpg">
+      <publishTime>09/20/2016 03:24:07</publishTime>
+    </File>
+    <File Include="Images/home.jpg">
+      <publishTime>09/21/2016 21:58:23</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>09/19/2016 16:52:24</publishTime>
+    </File>
+    <File Include="Scripts/app.js">
+      <publishTime>09/21/2016 16:35:36</publishTime>
+    </File>
+    <File Include="Scripts/config/routeConfig.js">
+      <publishTime>09/23/2016 01:16:51</publishTime>
+    </File>
+    <File Include="Scripts/controllers/chartEmployeesPerAgeCtrl.js">
+      <publishTime>09/23/2016 01:19:02</publishTime>
+    </File>
+    <File Include="Scripts/controllers/chartEmployeesPerJobCtrl.js">
+      <publishTime>09/23/2016 01:29:51</publishTime>
+    </File>
+    <File Include="Scripts/controllers/chartEmployeesPerPerfilCtrl.js">
+      <publishTime>09/23/2016 01:17:45</publishTime>
+    </File>
+    <File Include="Scripts/controllers/createEmployeeCtrl.js">
+      <publishTime>09/22/2016 01:35:13</publishTime>
+    </File>
+    <File Include="Scripts/controllers/employeesListCtrl.js">
+      <publishTime>09/21/2016 17:55:13</publishTime>
+    </File>
+    <File Include="Scripts/controllers/filterEmployeesCtrl.js">
+      <publishTime>09/22/2016 17:48:54</publishTime>
+    </File>
+    <File Include="Scripts/controllers/loginCtrl.js">
+      <publishTime>09/21/2016 00:48:55</publishTime>
+    </File>
+    <File Include="Scripts/lib/angular-animate.min.js">
+      <publishTime>09/21/2016 16:34:12</publishTime>
+    </File>
+    <File Include="Scripts/lib/angular-chart.js">
+      <publishTime>09/21/2016 05:00:57</publishTime>
+    </File>
+    <File Include="Scripts/lib/angular-locale_pt-br.js">
+      <publishTime>09/21/2016 21:31:15</publishTime>
+    </File>
+    <File Include="Scripts/lib/angular-route.min.js">
+      <publishTime>09/20/2016 04:48:35</publishTime>
+    </File>
+    <File Include="Scripts/lib/angular-touch.min.js">
+      <publishTime>09/21/2016 16:34:12</publishTime>
+    </File>
+    <File Include="Scripts/lib/angular.min.js">
+      <publishTime>09/20/2016 04:49:28</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/chart.js">
+      <publishTime>09/21/2016 04:46:52</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/charts/Chart.Bar.js">
+      <publishTime>09/21/2016 04:29:41</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/charts/Chart.Bubble.js">
+      <publishTime>09/21/2016 04:29:41</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/charts/Chart.Doughnut.js">
+      <publishTime>09/21/2016 04:29:41</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/charts/Chart.Line.js">
+      <publishTime>09/21/2016 04:29:41</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/charts/Chart.PolarArea.js">
+      <publishTime>09/21/2016 04:29:41</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/charts/Chart.Radar.js">
+      <publishTime>09/21/2016 04:29:41</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/charts/Chart.Scatter.js">
+      <publishTime>09/21/2016 04:29:41</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/controllers/controller.bar.js">
+      <publishTime>09/21/2016 04:30:07</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/controllers/controller.bubble.js">
+      <publishTime>09/21/2016 04:30:07</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/controllers/controller.doughnut.js">
+      <publishTime>09/21/2016 04:30:07</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/controllers/controller.line.js">
+      <publishTime>09/21/2016 04:30:07</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/controllers/controller.polarArea.js">
+      <publishTime>09/21/2016 04:30:07</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/controllers/controller.radar.js">
+      <publishTime>09/21/2016 04:30:07</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/core/core.animation.js">
+      <publishTime>09/21/2016 04:28:58</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/core/core.canvasHelpers.js">
+      <publishTime>09/21/2016 04:28:58</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/core/core.controller.js">
+      <publishTime>09/21/2016 04:28:58</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/core/core.datasetController.js">
+      <publishTime>09/21/2016 04:28:58</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/core/core.element.js">
+      <publishTime>09/21/2016 04:28:58</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/core/core.helpers.js">
+      <publishTime>09/21/2016 04:28:58</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/core/core.js">
+      <publishTime>09/21/2016 04:28:58</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/core/core.layoutService.js">
+      <publishTime>09/21/2016 04:28:58</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/core/core.legend.js">
+      <publishTime>09/21/2016 04:28:58</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/core/core.plugin.js">
+      <publishTime>09/21/2016 04:28:58</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/core/core.scale.js">
+      <publishTime>09/21/2016 04:28:58</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/core/core.scaleService.js">
+      <publishTime>09/21/2016 04:28:58</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/core/core.title.js">
+      <publishTime>09/21/2016 04:28:58</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/core/core.tooltip.js">
+      <publishTime>09/21/2016 04:28:58</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/elements/element.arc.js">
+      <publishTime>09/21/2016 04:30:34</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/elements/element.line.js">
+      <publishTime>09/21/2016 04:30:34</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/elements/element.point.js">
+      <publishTime>09/21/2016 04:30:34</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/elements/element.rectangle.js">
+      <publishTime>09/21/2016 04:30:34</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/scales/scale.category.js">
+      <publishTime>09/21/2016 04:30:58</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/scales/scale.linear.js">
+      <publishTime>09/21/2016 04:30:58</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/scales/scale.linearbase.js">
+      <publishTime>09/21/2016 04:30:58</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/scales/scale.logarithmic.js">
+      <publishTime>09/21/2016 04:30:58</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/scales/scale.radialLinear.js">
+      <publishTime>09/21/2016 04:30:58</publishTime>
+    </File>
+    <File Include="Scripts/lib/chart/scales/scale.time.js">
+      <publishTime>09/21/2016 04:30:58</publishTime>
+    </File>
+    <File Include="Scripts/lib/require/require.js">
+      <publishTime>09/21/2016 04:49:35</publishTime>
+    </File>
+    <File Include="Scripts/lib/ui-bootstrap-tpls-2.1.3.min.js">
+      <publishTime>09/21/2016 16:28:53</publishTime>
+    </File>
+    <File Include="Scripts/services/employeesAPIService.js">
+      <publishTime>09/23/2016 01:29:23</publishTime>
+    </File>
+    <File Include="Scripts/value/configValue.js">
+      <publishTime>09/21/2016 00:07:08</publishTime>
+    </File>
+    <File Include="Views/Home/ChartEmployeesPerAge.cshtml">
+      <publishTime>09/23/2016 01:24:39</publishTime>
+    </File>
+    <File Include="Views/Home/ChartEmployeesPerJob.cshtml">
+      <publishTime>09/23/2016 01:30:10</publishTime>
+    </File>
+    <File Include="Views/Home/ChartEmployeesPerPerfil.cshtml">
+      <publishTime>09/23/2016 01:25:02</publishTime>
+    </File>
+    <File Include="Views/Home/CreateEmployee.cshtml">
+      <publishTime>09/22/2016 15:40:38</publishTime>
+    </File>
+    <File Include="Views/Home/EmployeesList.cshtml">
+      <publishTime>09/22/2016 01:03:05</publishTime>
+    </File>
+    <File Include="Views/Home/FilterEmployees.cshtml">
+      <publishTime>09/22/2016 16:28:42</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>09/23/2016 01:23:43</publishTime>
+    </File>
+    <File Include="Views/Login/Login.cshtml">
+      <publishTime>09/21/2016 22:51:34</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>09/19/2016 16:52:17</publishTime>
+    </File>
+    <File Include="Views/Shared/Login.cshtml">
+      <publishTime>09/20/2016 03:32:06</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>09/20/2016 03:34:02</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>09/19/2016 16:52:17</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>09/19/2016 16:52:17</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/23/2016 15:36:44</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

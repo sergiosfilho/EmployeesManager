@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmployeesManagerModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="EmployeesManagerModelStoreContainer">
+    <EntitySet Name="Client" EntityType="EmployeesManagerModel.Store.Client" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Employee" EntityType="EmployeesManagerModel.Store.Employee" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Employee_JobTitle" EntityType="EmployeesManagerModel.Store.Employee_JobTitle" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="JobTitle" EntityType="EmployeesManagerModel.Store.JobTitle" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="EmployeesManagerModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="User" EntityType="EmployeesManagerModel.Store.User" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Employee_Client" Association="EmployeesManagerModel.Store.FK_Employee_Client">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Employee" EntitySet="Employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_JobTitle_Employee" Association="EmployeesManagerModel.Store.FK_Employee_JobTitle_Employee">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="Employee_JobTitle" EntitySet="Employee_JobTitle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_JobTitle_JobTitle" Association="EmployeesManagerModel.Store.FK_Employee_JobTitle_JobTitle">
+      <End Role="JobTitle" EntitySet="JobTitle" />
+      <End Role="Employee_JobTitle" EntitySet="Employee_JobTitle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobTitle_Client" Association="EmployeesManagerModel.Store.FK_JobTitle_Client">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="JobTitle" EntitySet="JobTitle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Client" Association="EmployeesManagerModel.Store.FK_User_Client">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="email" Type="nvarchar" MaxLength="100" />
+    <Property Name="document_identity" Type="nvarchar" MaxLength="15" />
+    <Property Name="document_CPF" Type="nvarchar" MaxLength="15" />
+    <Property Name="document_passport" Type="nvarchar" MaxLength="50" />
+    <Property Name="comments" Type="nvarchar" MaxLength="1000" />
+    <Property Name="clientId" Type="int" Nullable="false" />
+    <Property Name="birth" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Employee_JobTitle">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="employeeId" Type="int" Nullable="false" />
+    <Property Name="jobTitleId" Type="int" Nullable="false" />
+    <Property Name="dateBegin" Type="datetime" Nullable="false" />
+    <Property Name="dateEnd" Type="datetime" />
+  </EntityType>
+  <EntityType Name="JobTitle">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="clientId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="login" Type="nvarchar" MaxLength="50" />
+    <Property Name="passwordHash" Type="nvarchar" MaxLength="32" />
+    <Property Name="passwordSalt" Type="nvarchar" MaxLength="16" />
+    <Property Name="clientId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Employee_Client">
+    <End Role="Client" Type="EmployeesManagerModel.Store.Client" Multiplicity="1" />
+    <End Role="Employee" Type="EmployeesManagerModel.Store.Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="clientId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_JobTitle_Employee">
+    <End Role="Employee" Type="EmployeesManagerModel.Store.Employee" Multiplicity="1" />
+    <End Role="Employee_JobTitle" Type="EmployeesManagerModel.Store.Employee_JobTitle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Employee_JobTitle">
+        <PropertyRef Name="employeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_JobTitle_JobTitle">
+    <End Role="JobTitle" Type="EmployeesManagerModel.Store.JobTitle" Multiplicity="1" />
+    <End Role="Employee_JobTitle" Type="EmployeesManagerModel.Store.Employee_JobTitle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JobTitle">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Employee_JobTitle">
+        <PropertyRef Name="jobTitleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobTitle_Client">
+    <End Role="Client" Type="EmployeesManagerModel.Store.Client" Multiplicity="1" />
+    <End Role="JobTitle" Type="EmployeesManagerModel.Store.JobTitle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="JobTitle">
+        <PropertyRef Name="clientId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Client">
+    <End Role="Client" Type="EmployeesManagerModel.Store.Client" Multiplicity="1" />
+    <End Role="User" Type="EmployeesManagerModel.Store.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="clientId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

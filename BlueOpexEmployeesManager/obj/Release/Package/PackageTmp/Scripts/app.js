@@ -1,0 +1,1 @@
+﻿angular.module('employeesManager', ['ngRoute', 'chart.js', 'ui.bootstrap']);
